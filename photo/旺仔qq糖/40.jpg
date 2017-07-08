@@ -1,0 +1,49 @@
+8c5
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>中粮我买网_错误页面</title>
+<script type="text/javascript" language="javascript" src="http://static.womai.com/js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="http://static.womai.com/js/jquery.form.js"></script>
+<link href="http://static.womai.com/zhongliang/templets/NewIndex/Default/style/cart.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://static.womai.com/zhongliang/templets/NewIndex/Default/style/login.css">
+<style >
+.error_div2{font-size:12px; color:#676767; margin-top:16px; margin:15px 0 0 200px; }
+.error_div2 a{font-size:12px; color:#349900; margin-top:16px;border-bottom:#349900 1px solid;}
+.error_div3{font-size:14px;font-weight:bold;color:#ff6600; margin-top:16px; margin:30px 0 0 280px; }
+.error_div3 a{font-size:14px;font-weight:bold;color:#349900;border-bottom:#349900 1px solid;}
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function(){          
+	var seconds=5;
+	jQuery("#seconds").html(seconds);
+	setInterval(function(){         
+		seconds--;
+		jQuery("#seconds").html(seconds);
+		if(seconds<2){
+			window.top.location.href="http://www.womai.com/";
+			return;
+		}
+	},1000);
+});     
+</script>
+</head>
+
+<body>
+
+<div id="ordersTips_box" style="margin-top:100px;">
+    <div class="ordersTips_title"></div>
+	<div class="ordersTips">
+      <div class="ordersTips_t1">抱歉你访问的地址不存在或者暂时无法<br/>访问，请稍后再试!</div>
+      <div class="error_div3"><span id="seconds" style="color:#349900; font-size:15px"> </span> &nbsp;秒后自动跳转到<a href="http://www.womai.com/">中粮我买网首页</a></div>
+	  <div class="error_div2">&middot;请检查你输入的地址是否正确！</div>
+	  <div class="error_div2">&middot;如果你不能确认你输入的网址，请进入<a href="http://www.womai.com/">中粮我买网首页</a>浏览更多精彩内容!</div>
+      <div class="ordersTips_btn"></div>
+	</div><!--end ordersTips-->
+</div><!-- end ordersTips_box-->
+</body>
+</html>
+
+0
+
